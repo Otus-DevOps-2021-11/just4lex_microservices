@@ -16,3 +16,11 @@ $ docker inspect <u_image_id>
 Образ - как .iso, только у докера. Есть "родитель", есть контейнеры, которые созданы на базе этого образа. 
 У него в параметрах есть команды, которые выполнять, папки только для чтения, описание ОС, архитектуры, файловой системы и т.д. 
 Вообщем все, что присуще обычному образу операционной системы
+
+
+### Instead of docker-machine:
+docker context
+$ docker context create remote --docker "host=ssh://<user>@<ip>"
+remote
+Successfully created context "remote"
+$ docker context use remote
