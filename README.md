@@ -1,6 +1,10 @@
 # just4lex_microservices
 just4lex microservices repository
 
+### Docker-4
+Можно, через -p:
+docker-compose -p blabla up
+
 ### HW17
 - Download src:
 ```
