@@ -1,0 +1,18 @@
+root@ubuntu:/home/apankratov/otus_devops# docker images
+REPOSITORY                   TAG       IMAGE ID       CREATED          SIZE
+apankratov/ubuntu-tmp-file   latest    be00f88eff79   10 seconds ago   63.2MB
+ubuntu                       18.04     dcf4d4bef137   5 days ago       63.2MB
+hello-world                  latest    feb5d9fea6a5   4 months ago     13.3kB
+
+Сравните вывод двух следующих команд
+
+$ docker inspect <u_container_id>
+$ docker inspect <u_image_id>
+
+На основе вывода команд объясните чем отличается контейнер от
+образа.
+
+Контейнер - запущенный образ. У него есть параметры сети, процессора, памяти, даты старта и остановки и тд.
+Образ - как .iso, только у докера. Есть "родитель", есть контейнеры, которые созданы на базе этого образа. 
+У него в параметрах есть команды, которые выполнять, папки только для чтения, описание ОС, архитектуры, файловой системы и т.д. 
+Вообщем все, что присуще обычному образу операционной системы
