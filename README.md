@@ -1,5 +1,12 @@
 # just4lex_microservices
 just4lex microservices repository
+### Logging-1
+
+- Пересобраны образа
+- Настроено логирование (Fluent, Elastic, Kibana)
+- Устроили поиграйки с grokами
+- Поднят трейсинг
+- Было долго и немного больно, но вроде все получилось
 
 ### Docker-4
 Можно, через -p:
